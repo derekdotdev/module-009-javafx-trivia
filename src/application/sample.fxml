@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane prefHeight="32.0" prefWidth="800.0">
+         <children>
+            <HBox prefHeight="26.0" prefWidth="800.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="8.0" prefHeight="571.0" prefWidth="709.0">
+         <children>
+            <HBox layoutX="2.0" layoutY="7.0" prefHeight="93.0" prefWidth="800.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="89.0" prefWidth="215.0">
+                     <children>
+                        <Label fx:id="lblName" text="Name">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="nameEntry" prefHeight="27.0" prefWidth="251.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="60.0" prefWidth="65.0">
+                     <children>
+                        <Label fx:id="lblPoints" text="Points">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font></Label>
+                        <Text fx:id="scoreCounter" fill="#1bf507" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="209.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="93.0" prefWidth="179.0">
+                     <children>
+                        <VBox prefHeight="91.0" prefWidth="179.0">
+                           <children>
+                              <Label fx:id="lblCountdown" prefHeight="25.0" prefWidth="179.0" stylesheets="@application.css" text="Countdown Clock">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblTimer" prefHeight="57.0" prefWidth="176.0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="7.0" layoutY="131.0" prefHeight="132.0" prefWidth="481.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="124.0" prefWidth="150.0">
+                     <children>
+                        <Label fx:id="lblObject1" prefHeight="43.0" prefWidth="136.0" text="Object 1" textAlignment="CENTER">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblObj1" prefHeight="75.0" prefWidth="150.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="124.0" prefWidth="28.0">
+                     <children>
+                        <Label fx:id="lblPlus" prefHeight="38.0" prefWidth="35.0" text="+">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font></Label>
+                        <Label />
+                        <Label text="+">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="124.0" prefWidth="150.0">
+                     <children>
+                        <Label fx:id="lblObject2" prefHeight="43.0" prefWidth="134.0" text="Object 2" textAlignment="CENTER">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblObj2" prefHeight="75.0" prefWidth="150.0" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="60.0" prefWidth="67.0">
+                     <children>
+                        <Label fx:id="lblEquals" prefHeight="29.0" prefWidth="43.0" text=" =">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font></Label>
+                        <Label />
+                        <Label text=" =">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="60.0" prefWidth="67.0">
+                     <children>
+                        <Label fx:id="lblQuestion" text="?">
+                           <font>
+                              <Font name="System Bold Italic" size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <VBox layoutX="544.0" layoutY="100.0" prefHeight="486.0" prefWidth="260.0">
+               <children>
+                  <Label fx:id="lblTimestamp" alignment="CENTER" prefHeight="70.0" prefWidth="260.0" text="High Scores" textAlignment="CENTER" textFill="#0d0d0d">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="taTimestampArea" editable="false" prefHeight="553.0" prefWidth="260.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </TextArea>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <HBox layoutX="54.0" layoutY="436.0" prefHeight="60.0" prefWidth="377.0">
+               <children>
+                  <Button fx:id="btnChoice1" disable="true" mnemonicParsing="false" onAction="#pushAnswer" text="Choice 1">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnChoice2" disable="true" mnemonicParsing="false" onAction="#pushAnswer" text="Choice 2">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnChoice3" disable="true" layoutX="141.0" layoutY="50.0" mnemonicParsing="false" onAction="#pushAnswer" text="Choice 3">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnChoice4" disable="true" mnemonicParsing="false" onAction="#pushAnswer" text="Choice 4">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="2.0" layoutY="250.0" prefHeight="186.0" prefWidth="481.0">
+               <children>
+                  <TextArea fx:id="taAnswers" editable="false" prefHeight="114.0" prefWidth="474.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></TextArea>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="btnBeginGame" layoutX="134.0" layoutY="496.0" mnemonicParsing="false" onAction="#beginGame" prefHeight="28.0" prefWidth="217.0" text="PRESS TO BEGIN!" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
